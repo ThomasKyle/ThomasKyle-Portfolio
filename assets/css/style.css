@@ -80,23 +80,100 @@ header nav ul li a{
     min-height: 100vh;
 }
 
-.about-me h2{
-    border-bottom: 3px solid;
+.about-me{
+background-color: var(--t-color);
 }
 
-
-.about-me img{
-    width: 200px;
-    height: 200px;
-    position: absolute;
-    right: 50px;
-}
-
-.about-me p{
-    padding: 10px;
+.grid-container{
+    max-width: 800px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 100px);
+    grid-gap: 10px;
     padding-bottom: 50px;
-    font-size: 20px;
-    text-align: left;
+}
+
+.grid-img{
+    background-color: orange;
+    border: solid;
+    padding: 1em;
+    color: black;
+}
+
+.grid-img:hover{
+    opacity: 1;
+}
+
+.trainer:hover .grid-img h3, .trainer:hover .grid-img h4 {
+    top: 0;
+  }
+
+
+.grid-img::after{
+    content: "";
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.grid-img h3 {
+    position: relative;
+    z-index: 1;
+    font-size: 28px;
+    margin-bottom: 5px;
+    top: 200px;
+    transition: 0.6s;
+  }
+  
+  .grid-img h4 {
+    position: relative;
+    z-index: 1;
+    font-size: 22px;
+    top: 200px;
+    transition: 0.6s;
+    transition-delay: .2s;
+  }
+  
+  .grid-container:hover .grid-img h3, .grid-container:hover .grid-img h4 {
+    top: 0;
+  }
+
+
+.box1{
+    grid-column: 1/ span 2;
+    grid-row: 1/ span 2;
+    background-image: url("../images/hero-bg.jpg");
+}
+
+.box2{
+    background-image: url("../images/equations.jpg");
+    color: var(--text-color);
+    font-size: 12px;
+}
+
+.box3{
+    background-image: url("../images/led-wall.jpg");
+    color: var(--text-color);
+}
+
+.box4{
+    background-image: url("../images/puzzle.jpg");
+}
+
+.box5{
+    background-image: url("../images/wave.jpg");
+}
+
+.grid-img{
+    background-size: cover;
+    display: flex;
+    padding: 15px;
+    align-items: flex-end;
+    position: relative;
+    overflow: hidden;
 }
 
 .content-wrap{
