@@ -82,6 +82,26 @@ header nav ul li a{
 
 .about-me{
 background-color: var(--t-color);
+background-size: 400px;
+font-size: 20px;
+}
+
+.about-me h2{
+    text-align: center;
+    padding-bottom: 5px;
+    float: center;
+}
+
+.about-me p{
+    padding-right: 200px;
+    float: right;
+}
+
+.about-me img{
+    height: 300px;
+    width: 300px;
+    padding-left: 10px;
+    padding-bottom: 5px;
 }
 
 .grid-container{
