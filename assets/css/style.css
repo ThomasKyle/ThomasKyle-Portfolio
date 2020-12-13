@@ -1,0 +1,136 @@
+:root{
+    --p-color: #251b1a;
+    --s-color: #f7ce6c;
+    --t-color: #d4af37;
+    --text-color: #ffffff;
+    --other-color: #0d1117;
+}
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    color: var(--p-color);
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.section-title {
+    font-size: 48px;
+    border-bottom: 3px solid;
+    color: var(--p-color);
+    padding-bottom: 20px;
+    text-align: center;
+    margin: 0 auto 35px auto;
+    width: 50%;
+}
+
+.border{
+    border-color: var(--p-color);
+    width: 15%;
+}
+
+header{
+    padding: 20px 35px;
+    background: var(--p-color);
+}
+
+header nav {
+    margin: 7px 0;
+  }
+
+header h1 a{
+    font-weight: bold;
+    margin: 0;
+    font-size: 36px;
+    color: var(--s-color);
+}
+
+header nav ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+  }
+
+header nav ul li a{
+    padding: 10px 15px;
+    font-weight: lighter;
+    font-size: 1.55vw;
+    color: var(--s-color);
+}
+
+.hero{
+    background-image: url("../images/coding-lines.jpg");
+    padding: 125px;
+    background-size: cover;
+    text-align: right;
+}
+
+.hero h2{
+    color: var(--text-color);
+    float: right;
+}
+
+.page-container{
+    position: relative;
+    min-height: 100vh;
+}
+
+.about-me h2{
+    border-bottom: 3px solid;
+}
+
+
+.about-me img{
+    width: 200px;
+    height: 200px;
+    position: absolute;
+    right: 50px;
+}
+
+.about-me p{
+    padding: 10px;
+    padding-bottom: 50px;
+    font-size: 20px;
+    text-align: left;
+}
+
+.content-wrap{
+    padding-bottom: 2.5rem;
+}
+
+.contact-me{
+    padding: 50px;
+    color: var(--t-color);
+    background-color: var(--other-color);
+}
+
+.contact-me h3{
+    font-size: 30px;
+    border-bottom: 3px solid;
+}
+
+.contact-me a{
+    color: var(--s-color);
+}
+
+footer{
+    background-color: var(--p-color);
+    padding: 20px 35px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    width: 100%;
+    bottom: 0%;
+    position: absolute;
+}
+
+footer h2 {
+    color: var(--s-color);
+    font-size: 20px;
+    margin: 0;
+  }
