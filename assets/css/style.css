@@ -148,6 +148,11 @@ background-color: var(--t-color);
     background-image: url("../images/hero-bg.jpg");
 }
 
+.box1 a{
+    color: var(--other-color);
+    text-decoration: none;
+}
+
 .box2{
     background-image: url("../images/equations.jpg");
     color: var(--text-color);
